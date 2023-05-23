@@ -19,9 +19,9 @@ public class NavigateTo {
         driver.findElement(By.id("customer.username")).sendKeys("jsmith123");
         driver.findElement(By.id("customer.password")).sendKeys("password123");
         driver.findElement(By.id("repeatedPassword")).sendKeys("password123");
-        Thread.sleep(5000);
+        Thread.sleep(1000);
         driver.findElement(By.linkText("Register")).click();
-        Thread.sleep(5000);
+        Thread.sleep(1000);
         driver.quit();
     }
 }

@@ -10,9 +10,9 @@ public class Navigate2 {
         driver.get("http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx");
         driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("Tester");
         driver.findElement(By.id("ctl00_MainContent_password")).sendKeys("test");
-        Thread.sleep(5000);
+        Thread.sleep(1000);
         driver.findElement(By.id("ctl00_MainContent_login_button")).click();
-        Thread.sleep(5000);
+        Thread.sleep(1000);
         String title=driver.getTitle();
         if(title.equals("Web Orders Login")){
             System.out.println("The title is correct");
